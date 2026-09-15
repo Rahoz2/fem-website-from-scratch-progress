@@ -11,6 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <header class="site-header">
@@ -19,8 +20,12 @@
           <a href="/">
             <img class="logo" src="/assets/fungi-finders.svg" />
           </a>
+          <button aria-expanded="false" aria-controls="primary-nav">
+            <span class="visually-hidden">Menu</span>
+            <img src="assets/hamburger.svg" alt="hamburger menu" />
+          </button>
 
-          <nav class="primary-navigation">
+          <nav id="primary-nav" class="primary-navigation">
             <ul role="list">
               <li><a href="/">Discover</a></li>
               <li><a href="mushroom-guide.html">Mushroom guide</a></li>
