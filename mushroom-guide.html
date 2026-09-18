@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -12,6 +12,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
+    <script defer src="mushroom-filter.js"></script>
   </head>
 
   <body>
@@ -93,7 +94,7 @@
       <section class="section mushroom-guide">
         <div class="wrapper flow">
           <h2 class="section-title">Get to know your mushrooms</h2>
-          <div>
+          <div class="flex-group">
             <select name="season" id="season" hidden>
               <option value="all">Season: All</option>
               <option value="spring">Spring</option>
@@ -107,7 +108,7 @@
             </select>
           </div>
 
-          <div class="grid-auto-fit">
+          <div class="grid-auto-fill">
             <div class="card">
               <h3 class="card__title">Chanterelle</h3>
               <ul
